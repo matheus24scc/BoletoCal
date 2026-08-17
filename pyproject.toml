@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "boletocal"
+version = "0.1.0"
+description = "Turn any Brazilian boleto into a calendar event (due date + value + reminder)."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Matheus Gabriel Schveitzer" }]
+
+[project.scripts]
+boletocal = "boletocal.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["boletocal*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

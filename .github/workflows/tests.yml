@@ -16,3 +16,5 @@ jobs:
       - run: pip install -e . pytest
       - name: oracle (pytest)
         run: pytest -q
+      - name: smoke (uso real end-to-end)
+        run: python scripts/smoke.py

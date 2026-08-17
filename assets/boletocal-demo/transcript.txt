@@ -1,0 +1,11 @@
+# BoletoCal
+$ boletocal sample_boleto.txt
+{
+  "payee": "Energisa Sul-SC",
+  "due": "2025-08-15",
+  "value": 287.43,
+  "raw_value": "287,43",
+  "linha_digitavel": "23793.30426.00000.0.000000000000000"
+}
+
+.ics gerado: sample_boleto.ics

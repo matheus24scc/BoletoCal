@@ -67,6 +67,13 @@ Saída: evento `Boleto: Energisa Sul-SC R$ 287,43` em 15/08/2025, com alarme 2 d
 - `boletocal/calendar.py` — gera VCALENDAR/VEVENT válido com `VALARM` de lembrete.
 - `boletocal/cli.py` — interface de linha de comando (argparse).
 
+
+## Demo
+
+![BoletoCal em acao](assets/boletocal-demo/boletocal-demo.png)
+
+> GIF animado: [boletocal-demo.gif](assets/boletocal-demo/boletocal-demo.gif) — execucao real do CLI.
+
 ## Testes
 
 ```bash

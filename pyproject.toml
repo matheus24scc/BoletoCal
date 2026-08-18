@@ -14,6 +14,9 @@ authors = [{ name = "Matheus Gabriel Schveitzer" }]
 [project.scripts]
 boletocal = "boletocal.cli:main"
 
+[project.optional-dependencies]
+dev = ["pytest"]
+
 [tool.setuptools.packages.find]
 include = ["boletocal*"]
 

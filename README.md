@@ -91,3 +91,12 @@ Oracle verde (5 testes): extração de vencimento, valor, beneficiário, linha d
 ## Licença
 
 MIT — veja [LICENSE](LICENSE).
+
+## Status (checkup 2026-08-18)
+> Revisado na campanha de repo-checkup. Relatorio completo: `~/repo-checkup/reports/BoletoCal.md` (local do mantenedor, nao no repo).
+- **Build/Install**: PASS — `pip install -e ".[dev]"` RC=0 (pacote `boletocal` instalado em modo editavel + `pytest`).
+- **Smoke test**: `python -m pytest -q` -> 5 passed (RC=0); `pip-audit` => "No known vulnerabilities found".
+- **Para rodar de ponta-a-ponta precisa de**: nenhum servico externo (pacote CLI/biblioteca Python).
+- **Inconsistencias conhecidas (README vs codigo)**: `pyproject.toml` nao declarava o extra `dev` (com `pytest`); corrigido no checkup (agora `pip install -e ".[dev]"` funciona).
+- **Seguranca**: `pip-audit` => "No known vulnerabilities found"; secret scan sem segredos reais no codigo-fonte. Sem vulns altas remediadas automaticamente.
+- **Estado resumido**: build verde + smoke (install ok, 5 testes passando, sem vulns conhecidas).
